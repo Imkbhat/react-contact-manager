@@ -7,6 +7,8 @@ import AddContact from "./components/contacts/AddContact";
 
 import Header from "../src/components/layout/Header";
 import About from "../src/components/pages/About";
+import NotFound from "../src/components/pages/NotFound";
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -23,6 +25,7 @@ class App extends Component {
                   <Route exact path="/" component={Contacts} />
                   <Route exact path="/contact/add" component={AddContact} />
                   <Route exact path="/about" component={About} />
+                  <Route component={NotFound} />
                   {/* to pass name in  params and getting it in /about page <Route exact path="/about/:name" component={About} />*/}
                 </Switch>
               </div>
